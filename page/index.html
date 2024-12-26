@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox in Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- <div class="container mt-5">
+      <h1>Flexbox Example</h1>
+      <div class="d-flex justify-content-between align-items-center border p-3">
+        <div class="p-2 bg-primary text-white">Item 1</div>
+        <div class="p-2 bg-secondary text-white">Item 2</div>
+        <div class="p-2 bg-success text-white">Item 3</div>
+      </div>
+    </div> -->
+    <div class="d-flex flex-column">
+      <div
+        class="p-2 text-white m-auto mt-4"
+        style="width: 250px; height: 70px"
+      >
+        <h1 class="fs-1 text-warning fw-bold">Tarmac SL8</h1>
+      </div>
+      <div class="p-2 text-white d-flex mt-5">
+        <div class="w-100 h-80">
+          <img
+            src="/img/bike-3.jpg"
+            alt="Left Aligned"
+            class="float-start"
+            style="width: 800px; height: 450px; border-radius: 25px"
+          />
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="w-50 h-100 bg-white">
+            <div class="bike-3" style="width: 380px; height: 100px">
+              <h1 class="fs-2 fw-bold text-black">S-Works Tarmac SL8</h1>
+              <p class="fs-4 text-black">Shimano Dura-Ace Di2</p>
+            </div>
+            <div class="bike-2" style="width: 380px; height: 90px">
+              <h1 class="fs-1 text-black" style="font-family: Averia Libre">
+                $14,000
+              </h1>
+            </div>
+            <div class="text" style="width: 380px; height: 210px">
+              <p class="fs-4 text-black" style="font-family: Averia Libre">
+                The Specialzed Tarmac SL8 is the culmination of decadeworth of
+                championship of design tocreate, not just the fastest Tarmac
+                over,but the fastest race bike ever.
+              </p>
+            </div>
+            <div
+              class="bg-warning"
+              style="
+                width: 120px;
+                height: 40px;
+                border-radius: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <ul class="nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active text-white font-Averia Libre fw-bold"
+                    aria-current="page"
+                    href=""
+                    >Buy Now</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-2 text-white d-flex">
+        <div
+          class="m-1"
+          style="width: 150px; height: 150px; border-radius: 20px"
+        >
+          <img
+            src="/img/bike-4.jpg"
+            alt="Left Aligned"
+            class="float-start"
+            style="
+              width: 100%;
+              height: 100%;
+              border-radius: 25px;
+              object-fit: cover;
+            "
+          />
+        </div>
+        <div
+          class="m-1"
+          style="width: 150px; height: 150px; border-radius: 20px"
+        >
+          <img
+            src="/img/bike-5.jpg"
+            alt="Left Aligned"
+            class="float-start"
+            style="
+              width: 100%;
+              height: 100%;
+              border-radius: 25px;
+              object-fit: cover;
+            "
+          />
+        </div>
+        <div
+          class="m-1"
+          style="width: 150px; height: 150px; border-radius: 20px"
+        >
+          <img
+            src="/img/bike-6.jpg"
+            alt="Left Aligned"
+            class="float-start"
+            style="
+              width: 100%;
+              height: 100%;
+              border-radius: 25px;
+              object-fit: cover;
+            "
+          />
+        </div>
+        <div
+          class="m-1"
+          style="width: 150px; height: 150px; border-radius: 20px"
+        >
+          <img
+            src="/img/bike-7.jpg"
+            alt="Left Aligned"
+            class="float-start"
+            style="
+              width: 100%;
+              height: 100%;
+              border-radius: 25px;
+              object-fit: cover;
+            "
+          />
+        </div>
+        <div
+          class="m-1"
+          style="width: 150px; height: 150px; border-radius: 20px"
+        >
+          <img
+            src="/img/bike-8.jpg"
+            alt="Left Aligned"
+            class="float-start"
+            style="
+              width: 100%;
+              height: 100%;
+              border-radius: 25px;
+              object-fit: cover;
+            "
+          />
+        </div>
+      </div>
+      <div class="m-1 m-auto mt-5" style="width: 200px; height: 100px">
+        <h1
+          class="fs-1 text-warning d-flex justify-content-center align-items-center"
+        >
+          Accessory
+        </h1>
+      </div>
+
+      <div class="ms-5 d-flex">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+          <div class="card m-1" style="width: 18rem">
+            <img src="/img/hat-1.webp" class="card-img-top" alt="Card Image" />
+            <div class="card-body">
+              <h3 class="card-title">Tactic</h3>
+              <p class="m-auto" style="width: 100px; height: 20px">
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+              </p>
+              <div class="d-flex">
+                <div class="bg" style="width: 60px; height: 40px">$120</div>
+                <div
+                  class="bg-warning"
+                  style="
+                    width: 60px;
+                    height: 40px;
+                    margin-left: 110px;
+                    border-radius: 20px;
+                  "
+                >
+                  <ul class="nav">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active text-white font-Averia Libre fw-bold"
+                        aria-current="page"
+                        href=""
+                        >Buy</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+          <div class="card m-1" style="width: 18rem">
+            <img src="/img/shoes.webp" class="card-img-top" alt="Card Image" />
+            <div class="card-body">
+              <h3 class="card-title">Big Mouth 24oz</h3>
+              <p class="m-auto" style="width: 100px; height: 20px">
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+              </p>
+              <div class="d-flex">
+                <div class="bg" style="width: 60px; height: 40px">$5.49</div>
+                <div
+                  class="bg-warning"
+                  style="
+                    width: 60px;
+                    height: 40px;
+                    margin-left: 110px;
+                    border-radius: 20px;
+                  "
+                >
+                  <ul class="nav">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active text-white font-Averia Libre fw-bold"
+                        aria-current="page"
+                        href=""
+                        >Buy</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+          <div class="card m-1" style="width: 18rem">
+            <img src="/img/daiii.webp" class="card-img-top" alt="Card Image" />
+            <div class="card-body">
+              <h3 class="card-title">S-Works Power</h3>
+              <p class="m-auto" style="width: 100px; height: 20px">
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+              </p>
+              <div class="d-flex">
+                <div class="bg" style="width: 60px; height: 40px">$450</div>
+                <div
+                  class="bg-warning"
+                  style="
+                    width: 60px;
+                    height: 40px;
+                    margin-left: 110px;
+                    border-radius: 20px;
+                  "
+                >
+                  <ul class="nav">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active text-white font-Averia Libre fw-bold"
+                        aria-current="page"
+                        href=""
+                        >Buy</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-lg-3 col-md-3 col-sm-6 col-12 box">
+          <div class="card m-1" style="width: 18rem">
+            <img
+              src="/img/dai-kong.webp"
+              class="card-img-top"
+              alt="Card Image"
+            />
+            <div class="card-body">
+              <h3 class="card-title">Zee Cage II</h3>
+              <p class="m-auto" style="width: 100px; height: 20px">
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+              </p>
+              <div class="d-flex">
+                <div class="bg" style="width: 60px; height: 40px">$25</div>
+                <div
+                  class="bg-warning"
+                  style="
+                    width: 60px;
+                    height: 40px;
+                    margin-left: 110px;
+                    border-radius: 20px;
+                  "
+                >
+                  <ul class="nav">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active text-white font-Averia Libre fw-bold"
+                        aria-current="page"
+                        href=""
+                        >Buy</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+          <div class="card m-1" style="width: 18rem">
+            <img
+              src="/img/bottle-water.webp"
+              class="card-img-top"
+              alt="Card Image"
+            />
+            <div class="card-body">
+              <h3 class="card-title">Big Mouth 24oz</h3>
+              <p class="m-auto" style="width: 100px; height: 20px">
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+              </p>
+              <div class="d-flex">
+                <div class="bg" style="width: 60px; height: 40px">$5.49</div>
+                <div
+                  class="bg-warning"
+                  style="
+                    width: 60px;
+                    height: 40px;
+                    margin-left: 110px;
+                    border-radius: 20px;
+                  "
+                >
+                  <ul class="nav">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active text-white font-Averia Libre fw-bold"
+                        aria-current="page"
+                        href=""
+                        >Buy</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ms-5 d-flex">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+          <div class="card m-1" style="width: 18rem">
+            <img
+              src="/img/daii-kong2.webp"
+              class="card-img-top"
+              alt="Card Image"
+            />
+            <div class="card-body">
+              <h3 class="card-title">S-Works Turbo</h3>
+              <p class="m-auto" style="width: 100px; height: 20px">
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+              </p>
+              <div class="d-flex">
+                <div class="bg" style="width: 60px; height: 40px">$8,000</div>
+                <div
+                  class="bg-warning"
+                  style="
+                    width: 60px;
+                    height: 40px;
+                    margin-left: 110px;
+                    border-radius: 20px;
+                  "
+                >
+                  <ul class="nav">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active text-white font-Averia Libre fw-bold"
+                        aria-current="page"
+                        href=""
+                        >Buy</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+          <div class="card m-1" style="width: 18rem">
+            <img
+              src="/img/t-shirt.webp"
+              class="card-img-top"
+              alt="Card Image"
+            />
+            <div class="card-body">
+              <h3 class="card-title">Short Sleeve Jersey</h3>
+              <p class="m-auto" style="width: 100px; height: 20px">
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+              </p>
+              <div class="d-flex">
+                <div class="bg" style="width: 60px; height: 40px">$75</div>
+                <div
+                  class="bg-warning"
+                  style="
+                    width: 60px;
+                    height: 40px;
+                    margin-left: 110px;
+                    border-radius: 20px;
+                  "
+                >
+                  <ul class="nav">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active text-white font-Averia Libre fw-bold"
+                        aria-current="page"
+                        href=""
+                        >Buy</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+          <div class="card m-1" style="width: 18rem">
+            <img src="/img/acces.webp" class="card-img-top" alt="Card Image" />
+            <div class="card-body">
+              <h3 class="card-title">Flashback Taillight</h3>
+              <p class="m-auto" style="width: 100px; height: 20px">
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+              </p>
+              <div class="d-flex">
+                <div class="bg" style="width: 60px; height: 40px">$25</div>
+                <div
+                  class="bg-warning"
+                  style="
+                    width: 60px;
+                    height: 40px;
+                    margin-left: 110px;
+                    border-radius: 20px;
+                  "
+                >
+                  <ul class="nav">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active text-white font-Averia Libre fw-bold"
+                        aria-current="page"
+                        href=""
+                        >Buy</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+          <div class="card m-1" style="width: 18rem">
+            <img
+              src="/img/som-bork-kong.webp "
+              class="card-img-top"
+              alt="Card Image"
+            />
+            <div class="card-body">
+              <h3 class="card-title">Air Tool MTB Pump</h3>
+              <p class="m-auto" style="width: 100px; height: 20px">
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+              </p>
+              <div class="d-flex">
+                <div class="bg" style="width: 60px; height: 40px">$500</div>
+                <div
+                  class="bg-warning"
+                  style="
+                    width: 60px;
+                    height: 40px;
+                    margin-left: 110px;
+                    border-radius: 20px;
+                  "
+                >
+                  <ul class="nav">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active text-white font-Averia Libre fw-bold"
+                        aria-current="page"
+                        href=""
+                        >Buy</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-lg-3 col-md-3 col-sm-6 col-12 box">
+          <div class="card m-1" style="width: 18rem">
+            <img
+              src="/img/kam-kong.webp"
+              class="card-img-top"
+              alt="Card Image"
+            />
+            <div class="card-body">
+              <h3 class="card-title">Roval Traverse SL II 240 6B</h3>
+              <p class="m-auto" style="width: 100px; height: 20px">
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+                <i class="bi bi-star-fill" style="font-size: 1rem"></i>
+              </p>
+              <div class="d-flex">
+                <div class="bg" style="width: 60px; height: 40px">$925</div>
+                <div
+                  class="bg-warning"
+                  style="
+                    width: 60px;
+                    height: 40px;
+                    margin-left: 110px;
+                    border-radius: 20px;
+                  "
+                >
+                  <ul class="nav">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active text-white font-Averia Libre fw-bold"
+                        aria-current="page"
+                        href=""
+                        >Buy</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </body>
+</html>
